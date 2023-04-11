@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript for beginners</title>
+  </head>
+  <body>
+    <p id="Division of numbers"></p>
+    <form>
+      1st Number:<input type="text" id="number1" /><br />
+      2nd Number:<input type="text" id="number2" /><br />
+      <input type="button" onClick="divideBy()" value="Divide" />
+    </form>
+
+    <p>
+      Answer is : <br />
+      <span id="answer"></span>
+    </p>
+
+    <script type="text/javascript">
+      function divideBy() {
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        document.getElementById("answer").innerHTML = num1 / num2;
+      }
+    </script>
+  </body>
+</html>
